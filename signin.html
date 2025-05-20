@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Sign Up to Work for MicroDot</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .signup-form {
+            max-width: 400px;
+            margin: 40px auto;
+            padding: 2em;
+            background: #f4f5fa;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+        .signup-form h2 {
+            margin-bottom: 1em;
+            color: #333;
+        }
+        .signup-form label {
+            display: block;
+            margin: 1em 0 0.5em;
+            color: #222;
+        }
+        .signup-form input,
+        .signup-form textarea {
+            width: 100%;
+            padding: 0.7em;
+            margin-bottom: 1em;
+            border: 1px solid #bbb;
+            border-radius: 4px;
+            font-size: 1em;
+        }
+        .signup-form button {
+            background: #4285f4;
+            color: #fff;
+            border: none;
+            padding: 0.8em 1.5em;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .signup-form button:hover {
+            background: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <form class="signup-form" action="mailto:microdotsite@icloud.com" method="POST" enctype="text/plain">
+        <h2>Sign Up to Work for MicroDot</h2>
+        <label for="name">Full Name</label>
+        <input type="text" name="Name" id="name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" name="Email" id="email" required>
+
+        <label for="position">Desired Position</label>
+        <input type="text" name="Position" id="position" required>
+
+        <label for="why">Why do you want to work for MicroDot?</label>
+        <textarea name="Why" id="why" rows="4" required></textarea>
+
+        <button type="submit">Submit Application</button>
+    </form>
+</body>
+</html>
